@@ -1,0 +1,43 @@
+.categoriesFlex {
+    height: 300px;
+    width: auto;
+    background-color: transparent;
+    margin: auto auto 10px auto; 
+    border-radius: 10px;
+    border: 3px solid var(--cream);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.categoriesText
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+}
+.categoriesImage {
+    height: 295px;
+    width: 100%;
+   top: 0;
+    transition: 0.5s;
+    position: absolute;  
+    z-index: 9;
+    padding: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.categoriesImage:hover
+{
+opacity: 0.2;
+}
+.categoriesImage:hover .categoriesText
+{
+      
+    opacity: 1!important;
+    transition: 0.5s;
+   
+}
+
+
+

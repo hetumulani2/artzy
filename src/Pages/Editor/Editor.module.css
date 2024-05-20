@@ -1,0 +1,9 @@
+.sidebarSection
+{
+    height: 100px;
+    border : 1px dashed var(--cream);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

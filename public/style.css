@@ -1,0 +1,135 @@
+.mt-100
+{
+  margin-top: 100px;
+}
+.bg-cream
+{
+  background-color: #faeae0;
+}
+.text-cream
+{
+  color: var(--cream);
+}
+.bg-purple
+{
+  background-color: #3c2440;
+}
+h1 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #080808;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.one h1,.one2 h1 {
+  text-align: center;
+  text-transform: capitalize;
+  padding-bottom: 5px;
+}
+.one h1:before {
+  width: 28px;
+  height: 5px;
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  margin-left: -14px;
+  background-color: var(--purple);
+}
+.one h1:after {
+  width: 100px;
+  height: 1px;
+  display: block;
+  content: "";
+  position: relative;
+  margin-top: 25px;
+  left: 50%;
+  margin-left: -50px;
+  background-color: var(--purple);
+}
+.one2 h1:before {
+  width: 28px;
+  height: 5px;
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  margin-left: -14px;
+  background-color: var(--cream);
+}
+.one2 h1:after {
+  width: 100px;
+  height: 1px;
+  display: block;
+  content: "";
+  position: relative;
+  margin-top: 25px;
+  left: 50%;
+  margin-left: -50px;
+  background-color: var(--cream);
+}
+
+  /*************footer End*****************/
+  .slider-container {
+    width: 100%;
+    height: 80vh; /* Adjust height as needed */
+    position: relative;
+}
+
+.slides {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.slide {
+  
+    height: 100%;
+    scroll-snap-align: start;
+
+}
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background-color: #f0f0f0; /* Adjust background color */
+}
+
+.dots-container {
+    position: absolute;
+    top: 50%;
+  right: 3%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:var(--purple);
+    margin: 0 6px;
+}
+.dot.active 
+
+{
+ background-color: #fff;
+   border-bottom:  2px solid var(--purple);
+}
+  
+  
