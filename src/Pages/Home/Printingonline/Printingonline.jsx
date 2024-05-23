@@ -9,6 +9,7 @@ const Printingonline = () => {
   };
   return (
     <>
+    <div className={style.pattern}>
       <section className="mt-100">
         <Container>
           <div className="row">
@@ -34,13 +35,14 @@ const Printingonline = () => {
               </div>
             </div>
             <div className="col-6">
-              <div className={style.designFlex}>
-                <img src={design} alt="" />
+                <div className={style.designFlex}>
+                  <img src={design} alt="Design Studio" />
+                </div>
               </div>
-            </div>
           </div>
         </Container>
       </section>
+      </div>
     </>
   );
 };

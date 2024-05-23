@@ -7,11 +7,11 @@ const Topbar = () => {
   return (
  <>
   <section>
-        <div class="bg-cream  py-3  " style={{ color: "var(--purple)",position: 'fixed', width: '100%', zIndex: '1000', top: '0' }} >
+        <div class="bg-purple py-2" style={{ color: "var(--cream)"}} >
           <Container>
             <div class="row align-items-center">
               <div class="col-md-6 text-md-left ">
-                <ul class="list-inline mb-0">
+                <ul class="list-inline">
                   <li class="list-inline-item mr-md-4">
                     <FaMapMarked className="fs-5 me-1" /> |
                   </li>
@@ -27,19 +27,19 @@ const Topbar = () => {
                 <ul class="list-inline mb-0">
                   <li class="list-inline-item mr-3">
                     <a href="#">
-                      <FaFacebook className="fs-5"  style={{ color: "var(--purple)" }} />
+                      <FaFacebook className="fs-5"  style={{ color: "var(--cream)" }} />
                     </a>
                   </li>
                   <li class="list-inline-item ms-1">
                     <a href="#">
-                      <FaLinkedin className="fs-5"  style={{ color: "var(--purple)" }} />
+                      <FaLinkedin className="fs-5"  style={{ color: "var(--cream)" }} />
                     </a>
                   </li>
                   <li class="list-inline-item ms-1">
                     <a href="#">
                       <FaInstagram
                         className="fs-5"
-                        style={{ color: "var(--purple)" }}
+                        style={{ color: "var(--cream)" }}
                       />
                     </a>
                   </li>

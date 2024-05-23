@@ -9,14 +9,14 @@ import { Form, FormControl } from 'react-bootstrap';
 const NavbarComponent = () => {
   return (
     <>
-      <Navbar collapseOnSelect  className='bg-purple ' expand="lg" style={{ position: 'fixed', width: '100%', zIndex: '1000', top: '50px' }}>
+      <Navbar collapseOnSelect  className='bg-cream ' expand="lg" style={{ width: '100%',boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)'}}>
         <Container>
-          <Navbar.Brand href="/" className="text-white">ARTZY4U</Navbar.Brand>
+          <Navbar.Brand href="/" className="text-black">ARTZY4U</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
             <NavDropdown
-      title={<span style={{ color: 'white' }}>Customize</span>}
+      title={<span style={{ color: 'black' }}>Customize</span>}
       id="customize-nav-dropdown"
     >
                 <NavDropdown.Item href="#apparel" >
@@ -83,8 +83,9 @@ const NavbarComponent = () => {
                   <NavDropdown.Item href="#backpacks">Backpacks</NavDropdown.Item>
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#pricing"  className='text-white'>Shop</Nav.Link>
-              <Nav.Link href="#pricing "  className='text-white'>Inspiration</Nav.Link>
+              <Nav.Link href="#pricing"  className='text-black'>Shop</Nav.Link>
+              <Nav.Link href="#pricing "  className='text-black'>Inspiration</Nav.Link>
+              <Nav.Link href="/contact" className='text-black '>Reach out</Nav.Link>
             </Nav>
             <Form className="d-flex">
               <FormControl
@@ -96,9 +97,9 @@ const NavbarComponent = () => {
               {/* <Button variant="outline-success">Search</Button> */}
             </Form>
             <Nav>
-              <Nav.Link href="/contact">Reach out</Nav.Link>
+            
               <hr />
-              <Button className='btn btn-primary'>Login</Button>
+              <Button className='btn btn-primary ms-2'>Login</Button>
             </Nav>
           </Navbar.Collapse>
         </Container>

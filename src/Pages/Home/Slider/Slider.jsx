@@ -1,9 +1,21 @@
 import React, { useRef, useEffect, useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import image1 from '../../../Images/top-10-custom-t-shirt-printing-companies-in-india_1606231176-b.jpg';
-import image2 from '../../../Images/fa56a52f9ee10d8ef5ef45629049a650.jpg';
+import image1 from '../../../Images/1.jpg';
+import image2 from '../../../Images/2.png';
+import image3 from '../../../Images/3.png';
+import style from './Slider.module.css';
+import 'aos/dist/aos.css'; 
+import AOS from 'aos';
 
 const Slider = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      easing: 'ease-in-out', // Easing function
+      once: false, // Whether animation should happen only once - while scrolling down
+    });
+  }, []);
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef(null);
   const dotsRefs = useRef([]);
@@ -56,55 +68,56 @@ const Slider = () => {
 
   return (
   <>
-         <div className="slider-container">
+         <div className="slider-container " >
             <div ref={sliderRef} className="slides ">
-            <div className="slide d-flex ">
-                    <div className="image w-50  ">
-                        {/* <img src={image1} alt="Image 1" className='w-100 h-100 ' /> */}
+            <div className="slide d-flex slider" >
+                    <div className="w-50"  data-aos="fade-down">
+                      <div className="overlay"></div>
+                        <img src={image1} alt="Image 1" className='w-100 h-100'  />
                     </div>
-                    <div className="content w-50">
-                   <h1>Step into Our Design Studio</h1>
-                   <p>Begin your creative journey by exploring our user-friendly design studio. Whether it's a t-shirt, mug, or phone case, our platform makes expressing your unique style simple. Get started now and let your creativity soar.</p>
+                    <div className="content w-50 position-relative "   >
+                   <h1 className='text-cream  mb-3 'data-aos="fade-right" data-aos-duration="1000">Step into Our Design Studio</h1>
+                   <p className='text-cream ' data-aos="fade-up" data-aos-duration="2000">Begin your creative journey by exploring our user-friendly design studio. Whether it's a t-shirt, mug, or phone case, our platform makes expressing your unique style simple. Get started now and let your creativity soar.</p>
                     
                     </div>
                 </div>
-                <div className="slide d-flex ">
-                    <div className="image w-50 ">
-                        {/* <img src={image1} alt="Image 1" className='w-100 h-100 ' /> */}
+                <div className="slide d-flex  slider ">
+                    <div className=" w-50 ">             
+                        <img src={image2} alt="Image 1" className='w-100 h-100 ' />
                     </div>
-                    <div className="content w-50">
-                   <h1>Find Your Perfect Fit</h1>
-                   <p>Explore our collection of top-quality products. Discover items that match your style and needs effortlessly. Start exploring now.</p>
+                    <div className="content w-50 position-relative ">
+                   <h1 className='text-cream  mb-3 '>Find Your Perfect Fit</h1>
+                   <p className='text-cream '>Explore our collection of top-quality products. Discover items that match your style and needs effortlessly. Start exploring now.</p>
+                   
+                    </div>
+                </div>
+                <div className="slide d-flex slider  ">
+                    <div className=" w-50 ">                     
+                        <img src={image3} alt="Image 1" className='w-100 h-100 ' />
+                    </div>
+                    <div className="content w-50 position-relative">
+                   <h1 className='text-cream  mb-3 '>Make It Your Own</h1>
+                   <p className='text-cream '>Infuse your chosen product with your personal touch. Whether adding text, images, or adjusting colors, our tools make it a breeze. Start personalizing now and make it uniquely yours.</p>
                     
                     </div>
                 </div>
-                <div className="slide d-flex ">
-                    <div className="image w-50 ">
-                        {/* <img src={image1} alt="Image 1" className='w-100 h-100 ' /> */}
+                <div className="slide d-flex  slider ">
+                    <div className="w-50 ">
+                        <img src={image1} alt="Image 1" className='w-100 h-100 ' />
                     </div>
-                    <div className="content w-50">
-                   <h1>Make It Your Own</h1>
-                   <p>Infuse your chosen product with your personal touch. Whether adding text, images, or adjusting colors, our tools make it a breeze. Start personalizing now and make it uniquely yours.</p>
+                    <div className="content w-50 position-relative">
+                   <h1 className='text-cream  mb-3 ' >Double-Check and Confirm Your Design</h1>
+                   <p className='text-cream '> Review and confirm your creation before finalizing your order. Ensure every detail looks just the way you want it to. Once satisfied, proceed to checkout with peace of mind.</p>
                     
                     </div>
                 </div>
-                <div className="slide d-flex ">
-                    <div className="image w-50 ">
-                        {/* <img src={image1} alt="Image 1" className='w-100 h-100 ' /> */}
+                <div className="slide d-flex  slider">
+                    <div className=" w-50  ">
+                        <img src={image2} alt="Image 1" className='w-100 h-100 ' />
                     </div>
-                    <div className="content w-50">
-                   <h1>Double-Check and Confirm Your Design</h1>
-                   <p> Review and confirm your creation before finalizing your order. Ensure every detail looks just the way you want it to. Once satisfied, proceed to checkout with peace of mind.</p>
-                    
-                    </div>
-                </div>
-                <div className="slide d-flex ">
-                    <div className="image w-50 ">
-                        {/* <img src={image1} alt="Image 1" className='w-100 h-100 ' /> */}
-                    </div>
-                    <div className="content w-50">
-                   <h1>Secure Your Custom Creation</h1>
-                   <p> Complete your purchase securely and with peace of mind. Sit back and relax as we bring your ideas to life. Trust that your custom creation will be in good hands. Place your order now and experience the joy of custom-made perfection.</p>                    
+                    <div className="content w-50 position-relative"  >
+                   <h1 className='text-cream  mb-3 '>Secure Your Custom Creation</h1>
+                   <p className='text-cream '> Complete your purchase securely and with peace of mind. Sit back and relax as we bring your ideas to life. Trust that your custom creation will be in good hands. Place your order now and experience the joy of custom-made perfection.</p>                    
                     </div>
                 </div>
               
