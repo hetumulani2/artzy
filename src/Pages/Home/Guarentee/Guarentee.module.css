@@ -1,0 +1,12 @@
+.satisfation
+{
+   height: 400px;
+   width: 400px;
+   margin: 0 auto;
+   border-radius: 100px 100px 100px 100px;
+   overflow: hidden;
+   margin-top: 50px;
+   border: 10px solid rgb(210, 210, 210);
+   box-shadow: 0 0 30px rgba(0,0,0,0.5);
+
+}

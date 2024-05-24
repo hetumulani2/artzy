@@ -1,0 +1,22 @@
+.contact{
+    margin-top: 100px;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+ 
+
+}
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../Images/map for footer.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.2; /* Set the opacity here */
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+  }

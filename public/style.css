@@ -136,7 +136,7 @@ transition: .5s;
 
 }
 .slider {
-  background: var(--purple);
+  background: var(--purple) ;  
   /* background: linear-gradient(90deg,var(--cream), var(--purple)); */
 }
 .content {

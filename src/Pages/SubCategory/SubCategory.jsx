@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import style from "./SubCategory.module.css";
-import { FaStar, FaStarHalfAlt } from "react-icons/fa";
+import { FaPlus, FaStar, FaStarHalfAlt } from "react-icons/fa";
 import { Container } from "react-bootstrap";
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import { SUBCATEGORY } from "./SubCategory.utils";
@@ -50,6 +50,7 @@ const SubCategory = () => {
                       </a>
                     </li>
                   ))}
+          
                 </ul>
               </div>
             </div>
